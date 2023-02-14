@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		65A398D5299BADE70014955D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398D4299BADE70014955D /* AppDelegate.swift */; };
 		65A398D7299BADE70014955D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398D6299BADE70014955D /* SceneDelegate.swift */; };
-		65A398D9299BADE70014955D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398D8299BADE70014955D /* ViewController.swift */; };
 		65A398DC299BADE70014955D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A398DA299BADE70014955D /* Main.storyboard */; };
 		65A398DE299BADE80014955D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65A398DD299BADE80014955D /* Assets.xcassets */; };
 		65A398E1299BADE80014955D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A398DF299BADE80014955D /* LaunchScreen.storyboard */; };
+		65A398EF299BAE330014955D /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398EE299BAE330014955D /* Clock.swift */; };
+		65A398F1299BAE4E0014955D /* ClockModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398F0299BAE4E0014955D /* ClockModelView.swift */; };
+		65A398F3299BAF780014955D /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398F2299BAF780014955D /* ClockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65A398D1299BADE70014955D /* Clock-MVVM-Binding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock-MVVM-Binding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A398D4299BADE70014955D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A398D6299BADE70014955D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65A398D8299BADE70014955D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65A398DB299BADE70014955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65A398DD299BADE80014955D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65A398E0299BADE80014955D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65A398E2299BADE80014955D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65A398EE299BAE330014955D /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		65A398F0299BAE4E0014955D /* ClockModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockModelView.swift; sourceTree = "<group>"; };
+		65A398F2299BAF780014955D /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,47 @@
 			children = (
 				65A398D4299BADE70014955D /* AppDelegate.swift */,
 				65A398D6299BADE70014955D /* SceneDelegate.swift */,
-				65A398D8299BADE70014955D /* ViewController.swift */,
-				65A398DA299BADE70014955D /* Main.storyboard */,
+				65A398ED299BAE210014955D /* Models */,
+				65A398EC299BAE1B0014955D /* Views */,
+				65A398EB299BAE170014955D /* ViewModels */,
+				65A398EA299BAE0D0014955D /* Controllers */,
 				65A398DD299BADE80014955D /* Assets.xcassets */,
 				65A398DF299BADE80014955D /* LaunchScreen.storyboard */,
 				65A398E2299BADE80014955D /* Info.plist */,
 			);
 			path = "Clock-MVVM-Binding";
+			sourceTree = "<group>";
+		};
+		65A398EA299BAE0D0014955D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65A398F2299BAF780014955D /* ClockViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		65A398EB299BAE170014955D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				65A398F0299BAE4E0014955D /* ClockModelView.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		65A398EC299BAE1B0014955D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65A398DA299BADE70014955D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65A398ED299BAE210014955D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65A398EE299BAE330014955D /* Clock.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A398D9299BADE70014955D /* ViewController.swift in Sources */,
+				65A398F1299BAE4E0014955D /* ClockModelView.swift in Sources */,
 				65A398D5299BADE70014955D /* AppDelegate.swift in Sources */,
+				65A398F3299BAF780014955D /* ClockViewController.swift in Sources */,
+				65A398EF299BAE330014955D /* Clock.swift in Sources */,
 				65A398D7299BADE70014955D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
