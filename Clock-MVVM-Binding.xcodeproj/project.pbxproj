@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654A273D299CEC20005557AA /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654A273C299CEC20005557AA /* Observable.swift */; };
 		65A398D5299BADE70014955D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398D4299BADE70014955D /* AppDelegate.swift */; };
 		65A398D7299BADE70014955D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A398D6299BADE70014955D /* SceneDelegate.swift */; };
 		65A398DC299BADE70014955D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65A398DA299BADE70014955D /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		654A273C299CEC20005557AA /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		65A398D1299BADE70014955D /* Clock-MVVM-Binding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock-MVVM-Binding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65A398D4299BADE70014955D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65A398D6299BADE70014955D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				65A398D4299BADE70014955D /* AppDelegate.swift */,
 				65A398D6299BADE70014955D /* SceneDelegate.swift */,
+				654A273C299CEC20005557AA /* Observable.swift */,
 				65A398ED299BAE210014955D /* Models */,
 				65A398EC299BAE1B0014955D /* Views */,
 				65A398EB299BAE170014955D /* ViewModels */,
@@ -180,6 +183,7 @@
 				65A398D5299BADE70014955D /* AppDelegate.swift in Sources */,
 				65A398F3299BAF780014955D /* ClockViewController.swift in Sources */,
 				65A398EF299BAE330014955D /* Clock.swift in Sources */,
+				654A273D299CEC20005557AA /* Observable.swift in Sources */,
 				65A398D7299BADE70014955D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
