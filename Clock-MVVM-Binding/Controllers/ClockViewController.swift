@@ -19,7 +19,7 @@ class ClockViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 2. 실행 (didSet 호출은 없으므로 아직 동작은 안됨)
+        // 2. 실행
         setBindings()
         startTimer()
     }
@@ -31,12 +31,10 @@ class ClockViewController: UIViewController {
         }
     }
     
-    // 3. 어떠한 행동은 이와같이 저장 된다.(didChangeTime에 클로저의 동작을 담아 저장 시킨다)
+    // 3-2. 정의해 둔 bind 메서드를 통해서 text에 업데이트가 됩니다. (초기화된 값을 갖고 업데이트)
     func setBindings() {
-        // 6-2. 실행이 되면 text에 시간을 업데이트 시킨다. (실행 시점은 didSet이 동작 될 타이밍에 업데이트)
-        // 6-3. 매 초마다 값이 업데이트 된다.
-        viewModel.didChangeTime = { [weak self] viewModel in
-            self?.closureTimeLabel.text = viewModel.closureTime
+        viewModel.observableTime.bind { [weak self] time in
+            self?.observableTimeLabel.text = time
         }
     }
 }
