@@ -80,6 +80,7 @@
                             <constraint firstItem="zmt-zJ-Lml" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NhE-Pz-MXN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IyE-G4-Ljj"/>
                     <connections>
                         <outlet property="closureTimeLabel" destination="jix-gg-xK0" id="ObW-3x-HTS"/>
                         <outlet property="conbineTimeLabel" destination="hmf-k9-OsJ" id="e8s-dU-g0V"/>
@@ -88,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="55" y="-34"/>
+            <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
