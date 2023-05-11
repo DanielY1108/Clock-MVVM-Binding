@@ -9,20 +9,20 @@ import Foundation
 
 class Observable<T> {
     
-    private var listner: ((T) -> Void)?
+    private var listener: ((T?) -> Void)?
     
-    var value: T {
+    var value: T? {
         didSet {
-            listner?(value)
+            self.listener?(self.value)
         }
     }
     
-    init(_ value: T) {
+    init(_ value: T?) {
         self.value = value
     }
     
-    func bind(_ closure: @escaping (T) -> Void) {
-        self.listner = closure
-        self.listner?(value)
+    func bind(_ listener: @escaping (T?) -> Void) {
+        listener(value)
+        self.listener = listener
     }
 }

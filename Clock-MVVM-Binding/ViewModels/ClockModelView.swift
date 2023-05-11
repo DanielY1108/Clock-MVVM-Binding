@@ -10,6 +10,8 @@ import Combine
 
 class ClockViewModel {
     
+    // MARK: - closure
+    
     var didChangeTime: ((ClockViewModel) -> Void)?
     
     var closureTime: String {
@@ -18,14 +20,20 @@ class ClockViewModel {
         }
     }
     
+    // MARK: - obseravble
+
     var obseravbleTime: Observable<String> = Observable("Observable")
-    
-    @Published var combineTime: String = "Combine"
     
     init() {
         closureTime = Clock.currentTime()
     }
     
+    // MARK: - combine
+
+    @Published var combineTime: String = "Combine"
+    
+    // MARK: - method
+
     func checkTime() {
         closureTime = Clock.currentTime()
         obseravbleTime.value = Clock.currentTime()
